@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { withStyles, makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
@@ -10,7 +10,18 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import StarIcon from "@material-ui/icons/Star";
+import Tooltip from "@material-ui/core/Tooltip";
 const cardWidth = 500;
+const HtmlTooltip = withStyles(theme => ({
+  tooltip: {
+    backgroundColor: "#f5f5f9",
+    color: "rgba(0, 0, 0, 0.87)",
+    maxWidth: 220,
+    fontSize: theme.typography.pxToRem(12),
+    border: "1px solid #dadde9"
+  }
+}))(Tooltip);
+
 const useStyles = makeStyles(theme => ({
   card: {
     // minWidth: 100,
@@ -41,7 +52,7 @@ export default function SimpleCard(props) {
   const classes = useStyles();
   console.log(props.Task);
   // const bull = <span className={classes.bullet}>•</span>;
-
+  const limit = 20;
   return (
     <Card className={classes.card}>
       <List component="nav" className={classes.root} aria-label="contacts">
@@ -58,9 +69,24 @@ export default function SimpleCard(props) {
           />
         </ListItem>
         {props.Task[0].map((val, index) => {
+          let toShow =
+            val.length <= limit ? val : val.substring(0, limit) + "...";
           return (
             <ListItem button>
-              <ListItemText inset primary={val} />
+              <ListItemText
+                inset
+                primary={
+                  <HtmlTooltip
+                    title={
+                      <React.Fragment>
+                        <Typography color="inherit">{val}</Typography>
+                      </React.Fragment>
+                    }
+                  >
+                    <div>{toShow}</div>
+                  </HtmlTooltip>
+                }
+              />
             </ListItem>
           );
         })}
@@ -80,9 +106,24 @@ export default function SimpleCard(props) {
           />
         </ListItem>
         {props.Task[1].map((val, index) => {
+          let toShow =
+            val.length <= limit ? val : val.substring(0, limit) + "...";
           return (
             <ListItem button>
-              <ListItemText inset primary={val} />
+              <ListItemText
+                inset
+                primary={
+                  <HtmlTooltip
+                    title={
+                      <React.Fragment>
+                        <Typography color="inherit">{val}</Typography>
+                      </React.Fragment>
+                    }
+                  >
+                    <div>{toShow}</div>
+                  </HtmlTooltip>
+                }
+              />
             </ListItem>
           );
         })}
@@ -101,9 +142,24 @@ export default function SimpleCard(props) {
           />
         </ListItem>
         {props.Task[2].map((val, index) => {
+          let toShow =
+            val.length <= limit ? val : val.substring(0, limit) + "...";
           return (
             <ListItem button>
-              <ListItemText inset primary={val} />
+              <ListItemText
+                inset
+                primary={
+                  <HtmlTooltip
+                    title={
+                      <React.Fragment>
+                        <Typography color="inherit">{val}</Typography>
+                      </React.Fragment>
+                    }
+                  >
+                    <div>{toShow}</div>
+                  </HtmlTooltip>
+                }
+              />
             </ListItem>
           );
         })}

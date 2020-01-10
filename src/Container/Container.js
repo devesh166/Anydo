@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import Header from "../Header/Header";
-import Sidebar from "../Sidebar/Sidebar";
-import Card from "../Card/Card";
+import Header from "../Components/Header/Header";
+import Sidebar from "../Components/Sidebar/Sidebar";
+import Card from "../Components/Card/Card";
 import cloneDeep from "clone-deep";
-import AddList from "../Modal/AddList";
-import AddTask from "../Modal/AddTask";
+import AddList from "../Components/Modal/AddList";
+import AddTask from "../Components/Modal/AddTask";
+import Anydo from "../Components/Anydo/Anydo";
 function Container() {
   const [open, setOpen] = React.useState(true);
   const handleDrawer = () => {
@@ -45,7 +46,6 @@ function Container() {
 
     setList([...List, ListName]);
     setTask([...Task, cloneDeep(TempArr)]);
-    // addTask(0, 1, "mess");
   };
 
   const selectedList = index => {
@@ -58,7 +58,7 @@ function Container() {
     let temp = cloneDeep(Task);
     temp[listIndex][timeIndex].push(message);
     temp[0][timeIndex].push(message);
-    console.log(temp);
+    // console.log(temp);
     setTask(temp);
   };
   React.useEffect(() => {
@@ -67,9 +67,11 @@ function Container() {
   // console.log(Task[0][0][0]);
   return (
     <div>
-      <Header handleDrawer={handleDrawer} openTaskModal={openTaskModal} />
-      <AddList />
-      <Sidebar
+      <Anydo
+        //header
+        handleDrawer={handleDrawer}
+        openTaskModal={openTaskModal}
+        //sidebar
         ListTittle={"All Task"}
         selectedList={selectedList}
         toggleSidebar={open}
@@ -78,21 +80,18 @@ function Container() {
         addList={openListModal}
         addTask={addTask}
         Task={Task}
-      >
-        <AddList
-          closeListModal={closeListModal}
-          setModal={ListModal}
-          addList={addList}
-        />
-        <AddTask
-          setModal={TaskModal}
-          TaskList={List}
-          addTask={addTask}
-          closeTaskModal={closeTaskModal}
-        />
-
-        <Card Task={Task[ListIndex]} />
-      </Sidebar>
+        //Addlist modal
+        closeListModal={closeListModal}
+        setListModal={ListModal}
+        addList={addList}
+        //addtask modal
+        setModal={TaskModal}
+        TaskList={List}
+        addTask={addTask}
+        closeTaskModal={closeTaskModal}
+        //card
+        Task={Task[ListIndex]}
+      ></Anydo>
     </div>
   );
 }
