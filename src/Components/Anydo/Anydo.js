@@ -14,29 +14,27 @@ function Anydo(props) {
         handleDrawer={props.handleDrawer}
         openTaskModal={props.openTaskModal}
       />
-
+      <AddList
+        closeListModal={props.closeListModal}
+        setModal={props.setListModal}
+        addList={props.addList}
+      />
+      <AddTask
+        setModal={props.setModal}
+        TaskList={props.TaskList}
+        addTask={props.addTask}
+        closeTaskModal={props.closeTaskModal}
+      />
       <Sidebar
         ListTittle={"All Task"}
         selectedList={props.selectedList}
         toggleSidebar={props.toggleSidebar}
         List={props.List}
         CardTittle={props.CardTittle}
-        addList={props.addList}
+        addList={props.openListModal}
         addTask={props.addTask}
         Task={props.Task}
       >
-        <AddList
-          closeListModal={props.closeListModal}
-          setModal={props.SetListModal}
-          addList={props.addList}
-        />
-        <AddTask
-          setModal={props.setModal}
-          TaskList={props.TaskList}
-          addTask={props.addTask}
-          closeTaskModal={props.closeTaskModal}
-        />
-
         <Card Task={props.Task} />
       </Sidebar>
     </div>

@@ -72,12 +72,12 @@ function Container() {
         handleDrawer={handleDrawer}
         openTaskModal={openTaskModal}
         //sidebar
-        ListTittle={"All Task"}
+        // ListTittle={"All Task"}
         selectedList={selectedList}
         toggleSidebar={open}
         List={List}
         CardTittle={CardTittle}
-        addList={openListModal}
+        openListModal={openListModal}
         addTask={addTask}
         Task={Task}
         //Addlist modal
