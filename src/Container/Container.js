@@ -3,9 +3,9 @@ import Header from "../Components/Header/Header";
 import Sidebar from "../Components/Sidebar/Sidebar";
 import Card from "../Components/Card/Card";
 import cloneDeep from "clone-deep";
-import AddList from "../Components/Modal/AddList";
-import AddTask from "../Components/Modal/AddTask";
-import Anydo from "../Components/Anydo/Anydo";
+import AddList from "../Components/Modal/AddList/AddList";
+import AddTask from "../Components/Modal/AddTask/AddTask";
+import Anydo from "../Components/Anydo/index";
 function Container() {
   const [open, setOpen] = React.useState(true);
   const handleDrawer = () => {
@@ -68,11 +68,11 @@ function Container() {
   return (
     <div>
       <Anydo
+        data-testid="anyDoComp"
         //header
         handleDrawer={handleDrawer}
         openTaskModal={openTaskModal}
         //sidebar
-        // ListTittle={"All Task"}
         selectedList={selectedList}
         toggleSidebar={open}
         List={List}

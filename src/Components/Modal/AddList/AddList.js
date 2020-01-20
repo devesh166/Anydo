@@ -63,12 +63,17 @@ export default function AddList(props) {
         <div style={modalStyle} className={classes.paper}>
           <h2 id="simple-modal-title">Add List </h2>
           <p id="simple-modal-description">
-            <input value={ListName} onChange={handleInputChange}></input>
+            <input
+              value={ListName}
+              onChange={handleInputChange}
+              data-testid="input"
+            ></input>
           </p>
-          <button onClick={handleClose} color="primary">
+          <button onClick={handleClose} color="primary" data-testid="closebtn">
             Cancel
           </button>
           <button
+            data-testid="AddListModal"
             onClick={() => {
               if (ListName) {
                 props.addList(ListName);

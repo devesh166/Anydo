@@ -88,7 +88,7 @@ function Sidebar(props) {
     // else setOpen(false);
   }, [props.toggleSidebar]);
   return (
-    <div>
+    <div data-testid="sidebar">
       <div style={{ zIndex: 1, position: "relative" }} className={classes.root}>
         <CssBaseline />
         {/* 
@@ -109,6 +109,7 @@ function Sidebar(props) {
         </div> */}
 
         <Drawer
+          data-testid="drawer1"
           className={classes.drawer}
           variant="persistent"
           anchor="left"
@@ -119,13 +120,14 @@ function Sidebar(props) {
         >
           <div className={classes.drawerHeader}></div>
           <Divider />
-          <List>
+          <List data-testid="drawer">
             {props.List.map((text, index) => (
               <ListItem button key={text}>
                 {/* <ListItemIcon>
                     {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
                   </ListItemIcon> */}
                 <ListItemText
+                  data-testid={`ListBtn${index}`}
                   primary={
                     <Typography variant="h5">
                       <b>{text}</b>

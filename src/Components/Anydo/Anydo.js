@@ -1,15 +1,15 @@
 import React from "react";
-import Header from "../Header/Header";
-import Sidebar from "../Sidebar/Sidebar";
-import Card from "../Card/Card";
+import Header from "../Header/index";
+import Sidebar from "../Sidebar/index";
+import Card from "../Card/index";
 
-import AddList from "../Modal/AddList";
-import AddTask from "../Modal/AddTask";
+import AddList from "../Modal/AddList/index";
+import AddTask from "../Modal/AddTask/index";
 // import PropTypes from "prop-types";
 
 function Anydo(props) {
   return (
-    <div>
+    <div data-testid="anydo_comp">
       <Header
         handleDrawer={props.handleDrawer}
         openTaskModal={props.openTaskModal}

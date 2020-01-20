@@ -1,0 +1,439 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Anydo test suit Anydo Snapshot  1`] = `
+<div>
+  <div
+    data-testid="anydo_comp"
+  >
+    <div>
+      <div
+        style={
+          Object {
+            "position": "relative",
+            "zIndex": 10,
+          }
+        }
+      >
+        <header
+          className="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation4"
+        >
+          <div
+            className="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+          >
+            <button
+              aria-label="open drawer"
+              className="MuiButtonBase-root MuiIconButton-root makeStyles-menuButton-2 MuiIconButton-colorInherit MuiIconButton-edgeStart"
+              data-testid="icon"
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onDragLeave={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex={0}
+              type="button"
+            >
+              <span
+                className="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+                  />
+                </svg>
+              </span>
+            </button>
+            <h6
+              className="MuiTypography-root makeStyles-title-3 MuiTypography-h6"
+            >
+               
+              AnyDo
+               
+            </h6>
+            <button
+              data-testid="btn"
+              onClick={[Function]}
+            >
+               
+              <h5
+                className="MuiTypography-root MuiTypography-h5"
+              >
+                <b>
+                  Add
+                </b>
+              </h5>
+            </button>
+          </div>
+        </header>
+      </div>
+    </div>
+    <div />
+    <div />
+    <div
+      data-testid="sidebar"
+    >
+      <div
+        className="makeStyles-root-99"
+        style={
+          Object {
+            "position": "relative",
+            "zIndex": 1,
+          }
+        }
+      >
+        <div
+          className="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-105"
+          data-testid="drawer1"
+        >
+          <div
+            className="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-106 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft MuiPaper-elevation0"
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            <div
+              className="makeStyles-drawerHeader-107"
+            />
+            <hr
+              className="MuiDivider-root"
+            />
+            <ul
+              className="MuiList-root MuiList-padding"
+              data-testid="drawer"
+            >
+              <div
+                aria-disabled={false}
+                className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiListItemText-root"
+                  data-testid="ListBtn0"
+                  onClick={[Function]}
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  >
+                    <b>
+                      ALL Tasks
+                    </b>
+                  </h5>
+                </div>
+              </div>
+              <div
+                aria-disabled={false}
+                className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiListItemText-root"
+                  data-testid="ListBtn1"
+                  onClick={[Function]}
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  >
+                    <b>
+                      Personal
+                    </b>
+                  </h5>
+                </div>
+              </div>
+              <div
+                aria-disabled={false}
+                className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiListItemText-root"
+                  data-testid="ListBtn2"
+                  onClick={[Function]}
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  >
+                    <b>
+                      Work
+                    </b>
+                  </h5>
+                </div>
+              </div>
+              <div
+                aria-disabled={false}
+                className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiListItemText-root"
+                  data-testid="ListBtn3"
+                  onClick={[Function]}
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  >
+                    <b>
+                      Grocery List
+                    </b>
+                  </h5>
+                </div>
+              </div>
+            </ul>
+            <hr
+              className="MuiDivider-root"
+            />
+            <button
+              onClick={[Function]}
+            >
+               
+              <h5
+                className="MuiTypography-root MuiTypography-h5"
+              >
+                <b>
+                  + New List
+                </b>
+              </h5>
+            </button>
+          </div>
+        </div>
+        <main
+          className="makeStyles-content-108"
+        >
+          <div
+            className="makeStyles-drawerHeader-107"
+          >
+            <h2>
+              ALL Tasks
+            </h2>
+          </div>
+          <div
+            className="MuiPaper-root MuiCard-root makeStyles-card-149 MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <nav
+              aria-label="contacts"
+              className="MuiList-root makeStyles-root-153 MuiList-padding"
+            >
+              <div
+                aria-disabled={false}
+                className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiListItemIcon-root"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root"
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="MuiListItemText-root"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  >
+                    <b>
+                      Today
+                    </b>
+                  </h5>
+                </div>
+              </div>
+            </nav>
+            <nav
+              aria-label="contacts"
+              className="MuiList-root makeStyles-root-153 MuiList-padding"
+            >
+              <div
+                aria-disabled={false}
+                className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiListItemIcon-root"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root"
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="MuiListItemText-root"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  >
+                    <b>
+                      Tommorow
+                    </b>
+                  </h5>
+                </div>
+              </div>
+            </nav>
+            <nav
+              aria-label="contacts"
+              className="MuiList-root makeStyles-root-153 MuiList-padding"
+            >
+              <div
+                aria-disabled={false}
+                className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiListItemIcon-root"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root"
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="MuiListItemText-root"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  >
+                    <b>
+                      Upcoming
+                    </b>
+                  </h5>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -94,6 +94,7 @@ export default function Header(props) {
         <AppBar position="static">
           <Toolbar>
             <IconButton
+              data-testid="icon"
               //   aria-label="menu"
               color="inherit"
               aria-label="open drawer"
@@ -107,7 +108,7 @@ export default function Header(props) {
               {" "}
               AnyDo{" "}
             </Typography>
-            <button onClick={props.openTaskModal}>
+            <button data-testid="btn" onClick={props.openTaskModal}>
               {" "}
               <Typography variant="h5">
                 <b>Add</b>

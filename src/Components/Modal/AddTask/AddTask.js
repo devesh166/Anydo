@@ -85,9 +85,11 @@ export default function AddTask(props) {
         onClose={handleClose}
       >
         <div style={modalStyle} className={classes.paper}>
-          <FormControl className={classes.formControl}>
+          <FormControl className={classes.formControl} data-testid="addtask">
             <InputLabel htmlFor="grouped-select">List</InputLabel>
             <Select
+              // selectProps={{ "data-testid": "changeList" }}
+              data-testid="changeList"
               defaultValue={ListTittle}
               onChange={handleListChange}
               input={<Input id="grouped-select1" />}
@@ -96,24 +98,37 @@ export default function AddTask(props) {
                 if (index == 0) {
                   return;
                 }
-                return <MenuItem value={index}>{text}</MenuItem>;
+                return (
+                  <MenuItem key={index} value={index}>
+                    {text}
+                  </MenuItem>
+                );
               })}
             </Select>
           </FormControl>
           <FormControl className={classes.formControl}>
             <InputLabel htmlFor="grouped-select">Remind On</InputLabel>
             <Select
+              // selectProps={{ "data-testid": "changeDay" }}
+              data-testid="changeDay"
               defaultValue={Reminder}
               onChange={handleEventChange}
               input={<Input id="grouped-select2" />}
             >
-              <MenuItem value={0}>Today</MenuItem>
+              <MenuItem
+                value={0}
+                // inputProps={{ "data-testid": "Today" }}
+                // data-testid="Today"
+              >
+                Today
+              </MenuItem>
               <MenuItem value={1}>Tommorow</MenuItem>
               <MenuItem value={2}>Upcoming</MenuItem>
             </Select>
           </FormControl>
           <h2 id="simple-modal-title">Notes</h2>
           <TextField
+            inputProps={{ "data-testid": "changeText" }}
             value={Note}
             onChange={handleInputChange}
             id="simple-modal-description"
@@ -121,11 +136,12 @@ export default function AddTask(props) {
           <button
             // onClick=={handleClose}
             color="primary"
+            data-testid="okbtn"
             onClick={validateForm}
           >
             OK
           </button>
-          <button onClick={handleClose} color="primary">
+          <button onClick={handleClose} color="primary" data-testid="cancelbtn">
             Cancel
           </button>
         </div>
